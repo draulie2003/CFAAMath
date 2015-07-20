@@ -1,0 +1,417 @@
+/* === CSS RESET === */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* === End of CSS RESET === */
+
+body {
+	background-color: #DDD;
+	color: #000;
+	font-size: 20px;
+	font-family: "Terminal Dosis", sans-serif;
+	text-shadow: 
+		1px 1px 0 transparent,
+		2px 2px 0 #101010;
+	overflow: hidden;
+}
+h1 {
+	font-size: 75px;
+	font-weight: bold;
+	line-height: 1.5em;
+	text-shadow: 
+		2px 2px 0 transparent,
+		4px 4px 0 #101010;
+}
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #88020B;
+	margin-left: -20px;
+	margin-bottom: 20px;
+	text-shadow: 1px 1px 0 #101010;
+}
+
+a, a:visited {
+	color: white;
+	text-decoration: none;
+	border-bottom: 2px dotted;
+	transition: color 0.5s;
+}
+
+a:hover {
+	color: #AAA;
+}
+
+a:active {
+	color: lightblue;
+}
+
+.big {
+	display: block;
+	font-size: 45px;
+	font-weight: bold;
+	line-height: 1.3em;
+	margin-bottom: 10px;
+	text-shadow: 
+		2px 2px 0 transparent,
+		4px 4px 0 #101010;
+}
+
+.wrapper div {
+	position: absolute;
+}
+
+.settings, nav {
+	position: fixed;
+	z-index: 9999999;
+	bottom: 0;
+	background: rgba(10,10,10, 0.9);
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+.settings {
+	right: 0;
+	padding: 10px 20px;
+	border-radius: 10px 0 0 0;
+}
+
+.settings a {
+	border: none;
+}
+
+nav {
+	left: 50%;
+	margin-left: -450px;
+	border-radius: 10px 10px 0 0;
+	
+}
+
+nav li {
+	float: left;
+}
+
+nav a {
+	display: block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	text-align: center;
+	transition: 0.25s;
+}
+
+nav li:first-child a {
+	border-radius: 10px 0 0 0;
+}
+
+nav li:last-child a {
+	border-radius: 0 10px 0 0;
+}
+
+nav a:hover {
+	background: rgba(15,15,15, 0.5);
+}
+
+.sp-canvas {
+	display: none;
+}
+
+.arrow {
+	position: relative;
+	display: inline-block;
+}
+
+.info #hexcode {
+	position: absolute;
+	top: 450px;
+	left: -1000px;
+	height: 200px;
+}
+
+.home { 
+	top:-200px;
+	width: 800px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.home .arrow {
+	font-size: 20px;
+	animation: point-down 0.5s alternate infinite;
+}
+
+.home #cfaalogo{
+	width:300px;
+}
+.info {
+	top: 655px;
+	left: 180px;
+	width: 470px;
+	padding: 25px;
+	text-align: justify;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 10px;
+	-webkit-box-shadow:  4px 4px 0px 0px #101010;
+	box-shadow:  4px 4px 0px 0px #101010;
+}
+
+.info .slidename {
+	top: 100px;
+}
+
+.geometry {
+	top: 1300px;
+	left: 125px;
+	width: 960px;
+}
+
+.precal {
+	top: 1300px;
+	left: 1525px;
+	width: 960px;
+}
+.slidename {
+	position:absolute;
+	top:275px;
+	left:-300px;
+	font-size:100px;
+	font-weight:bold;
+	color:rgba(255,255,255,0.5);
+	padding:0px;
+	margin:0px;
+	font-family: 'Times';
+	text-shadow: 10px 10px rgba(0, 0, 0, 0.4);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.precal .slidename {
+	left: -325px;
+}
+
+.mcr {
+	top: 1800px;
+	left: 2925px;
+	width: 960px;
+	border: 1px solid white;
+}
+
+.mcr .slidename {
+	left: -200px;
+}
+
+.download {
+	top: 2850px;
+	left: 3150px;
+	width: 500px;
+	height: 500px;
+	padding: 25px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 10px;
+	-webkit-box-shadow:  4px 4px 0px 0px #101010;
+	box-shadow:  4px 4px 0px 0px #101010;
+}
+
+.download .slidename {
+	top: 200px;
+}
+
+.download h2 {
+	margin: 0;
+	margin-bottom: 10px;
+	text-align: center;
+	text-decoration: underline;
+	
+}
+
+.schedule {
+	left: 2600px;
+	top: 100px;
+	width: 960px;
+}
+.schedule .slidename {
+	left: -375px;
+}
+
+.schedule #nexus {
+	position: absolute;
+	top: 1100px;
+	left: 1000px;
+	height: 200px;
+}
+
+table
+{
+	margin: 0px auto;
+	font-size: 24px;
+}
+
+table .small
+{
+	font-size: 20px;
+}
+
+th
+{
+	color: #88020B;
+	font-size: 26px;
+}
+
+td
+{
+	text-align: left;
+	padding: 5px;
+}
+
+.tutor {
+	width: 500px;
+	left: 1450px;
+	top: -150px;
+	text-align: justify;
+}
+
+.tutor .slidename {
+	top: 125px;
+}
+
+.tutor h2{
+	color: #88020B;
+	margin-bottom: 0px;
+	font-weight: bold;
+}
+
+.contact{
+	width: 475px;
+	top: -1150px;
+	left: 1075px;
+	text-align: justify;
+}
+
+.contact .slidename {
+	top: 225px;
+}
+
+input, textarea
+{  
+    padding: 9px;  
+    border: solid 1px #E5E5E5;  
+    outline: 0;  
+    font: normal 13px/100% Verdana, Tahoma, sans-serif; 
+	color: #FFF;
+    width: 200px;  
+    background: #000;
+	-moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;
+}  
+  
+textarea
+{  
+    width: 400px;  
+    max-width: 400px;  
+    height: 150px;  
+    line-height: 150%;  
+}  
+  
+input:hover, textarea:hover, input:focus, textarea:focus
+{  
+    border-color: #88020B;  
+}  
+  
+label
+{  
+    margin-left: 7px;  
+    color: #FFF;  
+}  
+  
+.submit
+{  
+    width: auto;  
+    padding: 9px 15px;  
+    background: #88020B;  
+    border: 0;  
+    font-size: 14px;  
+    color: #FFFFFF;  
+    -moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;  
+}
+
+.submit:hover
+{
+	cursor: pointer;
+	background: #656565;
+}
+
+.submit:active
+{
+	/* IE10 */ 
+	background-image: -ms-linear-gradient(top, #656565 0%, #333333 50%, #656565 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #656565 0%, #333333 50%, #656565 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #656565 0%, #333333 50%, #656565 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #656565), color-stop(0.5, #333333), color-stop(1, #656565));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #656565 0%, #333333 50%, #656565 100%);
+	/* Proposed W3C Markup */ 
+	background-image: linear-gradient(top, #656565 0%, #333333 50%, #656565 100%);
+}
+
+fieldset
+{
+	border: none;
+	margin: 25px auto 0px auto;
+	width: 490px;
+}
+
+
+.highlight {
+	animation: highlight 0.2s alternate 6 ;
+}
+
+@keyframes point-down {
+	from {
+		top: 0;
+	}
+	to {
+		top: 5px;
+	}
+}
+
+@keyframes highlight {
+	to {
+		background: lightblue;
+	}
+}

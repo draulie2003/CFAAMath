@@ -1,0 +1,95 @@
+#header-container {
+	position: fixed;
+}
+
+#main-container {
+	background-color: #fff;
+	width: 24000px;
+}
+
+
+
+#main {
+
+	position: relative;
+
+	top: 0px;
+
+	width: 24000px;
+
+	margin: 0px auto;
+
+	z-index: 10;
+
+}
+
+#footer {
+	position: fixed;
+	top: 500px;
+	float: left;
+	left: 50%;
+	margin-left: -500px;
+	padding: 0px 0px 30px 0px;
+	width: 1000px;
+	border-top: 1px solid #333;
+}
+
+#chapters {
+	position: fixed;
+	width: 175px;
+	background-color: #fff;
+	top: 115px;
+	float: left;
+	left: 50%;
+	margin-left: -500px;
+	border-right: 1px solid #333;
+	text-align: center;
+	z-index: 1000;
+}
+
+#chapters h3 {
+	font-family: "droidlogoplain";
+	color: #C10D02;
+	font-size: 24px;
+	text-align: center;
+	margin: 10px 0px;
+}
+
+#chapters ul {
+	list-style: none;
+	margin: 5px 10px;
+	padding: 0px;
+}
+
+#chapters li a {
+	font-family: "KiteOne";
+	font-weight: normal;
+	padding: 0px;
+	text-decoration: none;
+	color: #333;
+	font-size: 17px;
+	text-align: center;
+}
+
+/* panels setup */
+
+.panel {
+	line-height: 1.5;
+	width: 900px;
+	padding: 60px 30px 15px 30px;
+	border: 1px solid green;
+}	
+
+
+/* we only want these to happen when JS is on and fortunately, this is all it takes */
+
+body.has-js {
+	width: 24000px;
+	overflow-x: hidden;
+}
+
+
+.has-js .panel {
+	float: left;
+	padding-right: 960px;
+}

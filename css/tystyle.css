@@ -1,0 +1,65 @@
+body {
+	background: url(../images/classy_fabric.png);
+	color: white;
+	font-size: 20px;
+	font-family: "Terminal Dosis", sans-serif;
+	text-shadow: 
+		1px 1px 0 transparent,
+		2px 2px 0 #101010;
+	overflow: hidden;
+	width: 100%;
+}
+h1 {
+	font-size: 75px;
+	font-weight: bold;
+	line-height: 1.5em;
+	text-shadow: 
+		2px 2px 0 transparent,
+		4px 4px 0 #101010;
+	margin: 3px 0 0 0;
+}
+
+.wrapper div {
+	position: absolute;
+	left: 50%;
+	margin-left: -400px;
+	padding: 0;
+}
+
+.home { 
+	top:77px;
+	width: 800px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.home #cfaalogo{
+	width:300px;
+}
+
+.slidename {
+	position:absolute;
+	top:200px;
+	left:-300px;
+	font-size:100px;
+	font-weight:bold;
+	color:rgba(255,255,255,0.5);
+	padding:0px;
+	margin:0px;
+	font-family: 'Times';
+	text-shadow: 10px 10px rgba(0, 0, 0, 0.4);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 16px;
+	vertical-align: baseline;
+}

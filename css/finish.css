@@ -1,0 +1,99 @@
+.when-video-ends{
+	position:absolute;
+	top:20%;
+	left:-9999em;
+	opacity:0;
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	text-align:center;
+	width:100%;
+	-webkit-transition:opacity .5s;
+	-moz-transition:opacity .5s;
+	transition:opacity .5s;
+
+	}
+.when-video-ends h3{
+	font-size:60px;
+	font-weight:bold;
+	margin-bottom:-10px;
+	color:#ccc;
+}
+
+.when-video-ends h4{
+	font-size:25px;
+	color:#777;
+}
+
+.when-video-ends h5{
+	font-size: 20px;
+	color:#777;
+}
+
+.when-video-ends .button{
+	background-color:#C10D02;
+	padding:20px 30px;
+	margin:15px 0;
+	-webkit-border-radius:60px;
+	-moz-border-radius:60px;
+	border-radius:60px;
+	font-size:20px;
+	color:#eee;
+	cursor:pointer;
+	display:inline-block;
+	-webkit-transition:background-color .1s;
+	-moz-transition:background-color .1s;
+	transition:background-color .1s;
+}
+
+.when-video-ends .button:hover{
+	background-color:#e30f02;
+}
+
+.when-video-ends .button:active{
+	background-color:#9f0b02;
+}
+
+.when-video-ends .fp-toggle{
+	display:block;
+	color:#C10D02;
+	font-size:20px;
+	cursor:pointer;
+}
+
+.when-video-ends .fp-toggle:hover{
+	color:#e30f02;
+}
+
+h5.replay_video {
+	font-size: 20px;
+}
+
+a.replay h5 {
+	color: #777;
+	text-decoration: none;
+}
+
+a.replay:visited h5 {
+	color: #777;
+}
+
+a.replay:hover h5 {
+	color: #C10D02;
+}
+
+#is-finished.is-finished{
+	background:#333;
+	-webkit-transition:background-color .7s;
+	-moz-transition:background-color .7s;
+	transition:background-color .7s;
+}
+
+/* Flash-save way to hide the engine */
+#is-finished.is-finished .fp-ui,#is-finished.is-finished .fp-engine{
+	top:-9999em;
+}
+
+#is-finished.is-finished .when-video-ends{
+	opacity:1;
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	left:0;
+}
